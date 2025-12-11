@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме + JS функціонал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="fade-in">
+        <h1>Моє резюме</h1>
+    </header>
+
+    <main>
+        <!-- Ліва частина резюме -->
+        <aside class="card fade-in">
+            <img src="images/avatar.jpg" class="profile" alt="Фото">
+            <h2>Антон Ковач</h2>
+            <p><strong>Email:</strong> anton@example.com</p>
+            <p><strong>Телефон:</strong> +380 00 000 00 00</p>
+        </aside>
+
+        <!-- Права частина -->
+        <section class="content fade-in">
+
+            <h2>Про мене</h2>
+            <p>
+                Я — студент, який вивчає веб-розробку, HTML, CSS та JavaScript. 
+                Створюю сайти та хочу стати Front-end розробником.
+            </p>
+
+            <hr>
+
+            <!-- Форма зворотнього зв'язку -->
+            <h2>Форма зворотного зв’язку</h2>
+
+            <form id="contactForm" class="contact-form">
+                <label>Ваше ім’я:</label>
+                <input type="text" id="name">
+
+                <label>Email:</label>
+                <input type="email" id="email">
+
+                <label>Повідомлення:</label>
+                <textarea id="message"></textarea>
+
+                <button type="submit">Надіслати</button>
+            </form>
+
+            <p id="formResult" class="result"></p>
+
+            <hr>
+
+            <!-- Міні-гра -->
+            <h2>Гра: Вгадай число</h2>
+            <p>Комп’ютер загадав число від 1 до 10. Спробуй вгадати!</p>
+
+            <input type="number" id="userNumber" min="1" max="10">
+            <button onclick="checkNumber()">Перевірити</button>
+
+            <p id="gameResult" class="result"></p>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
